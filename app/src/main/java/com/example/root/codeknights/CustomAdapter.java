@@ -16,6 +16,8 @@ import java.util.ArrayList;
 public class CustomAdapter extends BaseExpandableListAdapter {
     private Context context;
     private ArrayList<GroupInfo> deptList;
+
+
     public CustomAdapter(Context context, ArrayList<GroupInfo> deptList) {
         this.context = context;
         this.deptList = deptList;

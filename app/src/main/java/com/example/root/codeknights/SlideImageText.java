@@ -46,7 +46,7 @@ class MyPagerAdapter extends  FragmentPagerAdapter {
             case 1:
                 return FragmentWithTwoImages.newInstance("CropInfp", R.drawable.splashimage, R.drawable.splashimage);
             case 2:
-                return FragmentWithTwoImages.newInstance("CropInfp", R.drawable.splashimage, R.drawable.splashimage);
+                return CropRecommendationFragment.newInstance();
             default:
                 return null;
         }

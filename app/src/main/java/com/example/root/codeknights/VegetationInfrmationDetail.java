@@ -30,10 +30,10 @@ public class VegetationInfrmationDetail extends AppCompatActivity {
         int child=i.getIntExtra("child",0);
         choose_crop(parent,child);
         databaseReference= FirebaseDatabase.getInstance().getReference();
-        CustomList adapter = new
-                CustomList(VegetationInfrmationDetail.this, crop, imageId);
+        //CustomList adapter = new
+          //      CustomList(VegetationInfrmationDetail.this, crop, imageId);
         list=(ListView)findViewById(R.id.list);
-        list.setAdapter(adapter);
+        //list.setAdapter(adapter);
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,10 @@ import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 
 /**
@@ -41,13 +46,15 @@ public class Weatheradapter extends ArrayAdapter<Weather> {
         }
 
         TextView dateTextView=convertView.findViewById(R.id.Date);
-        TextView minTextView=convertView.findViewById(R.id.temp_low);
-        TextView maxTextView=convertView.findViewById(R.id.temp_high);
+        TextView minTextView=convertView.findViewById(R.id.low_value);
+        TextView maxTextView=convertView.findViewById(R.id.high_value);
         ImageView weatherstatus=convertView.findViewById(R.id.weatherstatus);
         dateTextView.setText(weather.getDate());
         minTextView.setText(weather.getMintemp());
         maxTextView.setText(weather.getMaxtemp());
-        Picasso.with(context).load(Uri.parse(weather.getDayforecast())).into(weatherstatus);
+
+            Picasso.with(context).load("http:"+weather.getDayforecast()).into(weatherstatus);
+
 
         return  convertView;
     }
