@@ -32,7 +32,7 @@ class MyPagerAdapter extends  FragmentPagerAdapter {
     // Returns total number of pages.
     @Override
     public int getCount() {
-        return NUM_ITEMS;
+        return 3;
     }
 
     // Returns the fragment to display for a particular page.
@@ -41,8 +41,8 @@ class MyPagerAdapter extends  FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0:findweather fw=new findweather();
-                return CURRENTWEATHER.newInstance(fw.temp,fw.city,fw.humidity,fw.mintemp,fw.maxtemp,fw.description);
+            case 0://findweather fw=new findweather();
+                return CURRENTWEATHER.newInstance();
             case 1:
                 return FragmentWithTwoImages.newInstance("CropInfp", R.drawable.splashimage, R.drawable.splashimage);
             case 2:
@@ -57,7 +57,13 @@ class MyPagerAdapter extends  FragmentPagerAdapter {
     // Returns the page title for the top indicator
     @Override
     public CharSequence getPageTitle(int position) {
-        return "Tab " + position;
+
+        switch (position){
+            case 0: return "Current Day Forecast";
+            case 1: return "Seven Day Forecast";
+            case 2: return "Crop Recommendation";
+            default:return "";
+        }
     }
 
 }

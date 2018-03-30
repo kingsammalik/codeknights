@@ -26,6 +26,7 @@ public class Recommendation extends AppCompatActivity {
     String REGION,SEASON,CROPS;
     DatabaseReference databaseReference;
     Button showinfo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

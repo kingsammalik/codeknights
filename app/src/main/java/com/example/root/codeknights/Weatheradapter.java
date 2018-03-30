@@ -1,13 +1,17 @@
 package com.example.root.codeknights;
 
 import android.content.Context;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
@@ -18,8 +22,12 @@ import java.util.ArrayList;
  */
 
 public class Weatheradapter extends ArrayAdapter<Weather> {
+
+    private Context context;
+
     public Weatheradapter(@NonNull Context context, ArrayList<Weather> weatherArrayList) {
         super(context, 0,weatherArrayList);
+        this.context=context;
     }
 
     @NonNull
@@ -35,12 +43,11 @@ public class Weatheradapter extends ArrayAdapter<Weather> {
         TextView dateTextView=convertView.findViewById(R.id.Date);
         TextView minTextView=convertView.findViewById(R.id.temp_low);
         TextView maxTextView=convertView.findViewById(R.id.temp_high);
-        TextView dayTextVew=convertView.findViewById(R.id.day_forecast_value);
+        ImageView weatherstatus=convertView.findViewById(R.id.weatherstatus);
         dateTextView.setText(weather.getDate());
         minTextView.setText(weather.getMintemp());
         maxTextView.setText(weather.getMaxtemp());
-        dayTextVew.setText(weather.getDayforecast());
-
+        Picasso.with(context).load(Uri.parse(weather.getDayforecast())).into(weatherstatus);
 
         return  convertView;
     }

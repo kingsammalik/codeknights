@@ -104,7 +104,7 @@ public class FragmentWithTwoImages extends Fragment {
                     String maxTemperature=temperatureObj.getString("maxtemp_c");
                     weather.setMaxtemp(maxTemperature);
                     JSONObject dayObj=resultObj.getJSONObject("day");
-                    String day=dayObj.getJSONObject("condition").getString("text");
+                    String day=dayObj.getJSONObject("condition").getString("icon");
                     weather.setDayforecast(day);
                     weatherArrayList.add(weather);
 
