@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.codeknights.Displaycrop">
+
+    <TextView
+        android:id="@+id/harvesting"
+        android:layout_width="148dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/maxph"
+        android:layout_width="148dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/harvesting" />
+
+    <TextView
+        android:id="@+id/maxrain"
+        android:layout_width="148dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxph" />
+
+    <TextView
+        android:id="@+id/Maxtemp"
+        android:layout_width="148dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxrain" />
+
+    <TextView
+        android:id="@+id/minrain"
+        android:layout_width="148dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Maxtemp" />
+
+    <TextView
+        android:id="@+id/Mintemp"
+        android:layout_width="148dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minrain" />
+
+    <TextView
+        android:id="@+id/soiltype"
+        android:layout_width="148dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mintemp" />
+
+</android.support.constraint.ConstraintLayout>

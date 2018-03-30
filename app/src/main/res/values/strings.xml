@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">codeknights</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+    <string name="home_page">Home Page</string>
+    <string name="welcome">welcome</string>
+    <string name="enter_your_number">Enter your number</string>
+    <string name="verify">Verify</string>
+    <string name="request_otp">Request Otp</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="title_activity_weather">weather</string>
+    <string name="_5_day_of_weather_forecast">5 Day of Weather Forecast</string>
+    <string name="date">Date</string>
+    <string name="high">High</string>
+    <string name="temperature">Temperature</string>
+    <string name="low">Low</string>
+    <string name="forecast">Forecast</string>
+    <string name="dayforecast">Dayforecast</string>
+    <string name="nightforecast">Nightforecast</string>
+    <string-array name="REGION">
+        <item>Punjab</item>
+        <item>Bihar</item>
+        <item>Uttar-Pradesh</item>
+    </string-array>
+    <string-array name="SEASON">
+        <item>Summer</item>
+        <item>Winter</item>
+    </string-array>
+    <string-array name="CROPS">
+        <item>Bajra</item>
+        <item>Paddy</item>
+        <item>Mustard</item>
+        <item>Wheat</item>
+    </string-array>
+</resources>
