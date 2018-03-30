@@ -16,7 +16,7 @@ public class CustomList extends ArrayAdapter<String> {
     private final Activity context;
     private final String[] crop;
     private final Integer[] imageId;
-    public CustomList(Activity context,String[] crop, Integer[] imageId) {
+    public CustomList(Activity context, String crop, int imageId) {
         super(context, R.layout.list_single,crop);
         this.context = context;
         this.crop = crop;

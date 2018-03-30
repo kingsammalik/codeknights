@@ -29,6 +29,7 @@
         <activity android:name=".Dashboard"/>
         <activity android:name=".LogIn" />
         <activity android:name=".LogInInsurance" />
+        <activity android:name=".VegetationInfrmationDetail" />
         <activity android:name=".CropInfoActivity" />
 
     </application>

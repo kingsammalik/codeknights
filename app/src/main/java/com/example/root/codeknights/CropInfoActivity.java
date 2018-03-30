@@ -1,5 +1,6 @@
 package com.example.root.codeknights;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -40,8 +41,10 @@ public class CropInfoActivity extends AppCompatActivity {
             //get the child info
             ChildInfo detailInfo =  headerInfo.getProductList().get(childPosition);
             //display it or do something with it
-            Toast.makeText(getBaseContext(), " Clicked on :: " + headerInfo.getName()
-                    + "/" + detailInfo.getName(), Toast.LENGTH_LONG).show();
+            Intent intent=new Intent(CropInfoActivity.this,VegetationInfrmationDetail.class);
+            intent.putExtra("group",groupPosition);
+            intent.putExtra("child",childPosition);
+            startActivity(intent);
             return false;
         }
         });
