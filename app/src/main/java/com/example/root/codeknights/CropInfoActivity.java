@@ -13,7 +13,7 @@ import java.util.LinkedHashMap;
  * Created by root on 3/20/18.
  */
 
-public class CropInfo extends AppCompatActivity {
+public class CropInfoActivity extends AppCompatActivity {
     private LinkedHashMap<String, GroupInfo> subjects = new LinkedHashMap<String, GroupInfo>();
     private ArrayList<GroupInfo> deptList = new ArrayList<GroupInfo>();
 
@@ -27,7 +27,7 @@ public class CropInfo extends AppCompatActivity {
         //get reference of the ExpandableListView
         simpleExpandableListView = (ExpandableListView) findViewById(R.id.simpleExpandableListView);
         // create the adapter by passing your ArrayList data
-        listAdapter = new CustomAdapter(CropInfo.this, deptList);
+        listAdapter = new CustomAdapter(CropInfoActivity.this, deptList);
         // attach the adapter to the expandable list view
         simpleExpandableListView.setAdapter(listAdapter);
         //expand all the Groups
