@@ -23,7 +23,7 @@ public class CropInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.crop_info);
         // add data for displaying in expandable list view
-        loadData();
+        loadData();//thisis load data
         //get reference of the ExpandableListView
         simpleExpandableListView = (ExpandableListView) findViewById(R.id.simpleExpandableListView);
         // create the adapter by passing your ArrayList data
